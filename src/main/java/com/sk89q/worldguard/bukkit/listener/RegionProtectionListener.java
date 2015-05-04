@@ -98,7 +98,7 @@ public class RegionProtectionListener extends AbstractListener {
                 RegionQuery query = getPlugin().getRegionContainer().createQuery();
                 String message = query.queryValue(location, player, DefaultFlag.DENY_MESSAGE);
                 if (message != null && !message.isEmpty()) {
-                    player.sendMessage(message.replace("%what%", what));
+                    //player.sendMessage(message.replace("%what%", what));
                 }
                 WGMetadata.put(player, DENY_MESSAGE_KEY, now);
             }
