@@ -53,7 +53,7 @@ public class BuildPermissionListener extends AbstractListener {
     private void tellErrorMessage(CommandSender sender, World world) {
         String message = getWorldConfig(world).buildPermissionDenyMessage;
         if (!message.isEmpty()) {
-            sender.sendMessage(message);
+           //sender.sendMessage(message);
         }
     }
 
